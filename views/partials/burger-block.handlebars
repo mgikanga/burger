@@ -1,0 +1,13 @@
+<li>
+  {{#if devoured}} 
+   <button>{{burger_name}}</button>
+	<button class="devoured" data-id="{{id}}" data-newdevoure=""="{{devoured}}">
+		 DEVOURE IT
+	</button>
+
+{{else}} <form>
+<div class="form-group"> 
+        <input type="text" id="burger" name="burger" value= "{{burger_name}}">
+    </div></form>
+    {{/if}}
+</li>

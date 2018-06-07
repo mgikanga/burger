@@ -1,0 +1,36 @@
+body {
+    background-image: url("../img/burg.jpg");
+ 
+ }
+ h1{
+     text-align: center;
+     color:rgb(192, 98, 22);
+     font-family: 'Abril Fatface', cursive;
+     margin: 2px;
+ }
+ h3{
+     color: olivedrab;
+     font-family: 'Glegoo', serif;
+ }
+ .devoured{
+     color:rgb(255, 38, 0);
+     font-family: 'Abril Fatface', cursive;
+     font-size: 20px;
+ }
+ button{
+     color: brown;
+     margin: 2px;
+     text-align: center;
+     width: 35%;
+     font-family: 'Abril Fatface', cursive;
+     font-size: 20px;
+ }
+ .submit{
+     background-color: olive;
+     color: white;
+    width: 15%;
+    padding: 1%;
+ }
+ ul{
+     list-style: none;
+ }
