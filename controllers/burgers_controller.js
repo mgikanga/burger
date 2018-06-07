@@ -11,13 +11,21 @@ router.get("/",function(req,res){
         res.render("index", myBurgers);
     })
 });
-router.get("/api/burger/:burger_name", function(req, res){
-    var colToSearch = req.params.burger_name;
-    burger.selectOne
-    // to be continued
+router.post("/api/new_burger", function(req, res){
+   console.log("it is", req.body.burger)
+    burger.create([
+        "burger_name"
+    ],
+    [
+        req.body.burger
+       
+    ], function(result){
+res.render("index", result.burger_name);
+    })
+  
 })
 
-router.put("/api/burgers/:id", function(req, res){
+router.post("/api/burgers/:id", function(req, res){
     var condition = "id = " + req.params.id;
     console.log("id" , condition);
     burger.update({
